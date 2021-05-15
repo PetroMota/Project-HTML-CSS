@@ -44,22 +44,22 @@ $section-title-padding-desktop: 24px;
   color: $body-default-text-color;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/images/reviews/bg-footer-mobile.png);
+  background-image: url(../images/reviews/mobile/bg_2_mobile.png);
   @media screen and (min-width: $tablet) {
-    background-image: url(/images/reviews/bg-footer-tablet.png);
+    background-image: url(../images/reviews/tablet/bg_2_tablet.png);
   }
   @media screen and (min-width: $desktop) {
-    background-image: url(/images/reviews/bg-footer-desktop.png);
+    background-image: url(../images/reviews/desktop/bg_2_desktop.png);
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(/images/reviews/bg-footer-mobile-2x.png);
+    background-image: url(../images/reviews/mobile/bg_2_mobile@2x.png);
     @media screen and (min-width: $tablet) {
-      background-image: url(/images/reviews/bg-footer-tablet-2x.png);
+      background-image: url(../images/reviews/tablet/bg_2_tablet@2x.png);
     }
     @media screen and (min-width: $desktop) {
-      background-image: url(/images/reviews/bg-footer-desktop-2x.png);
+      background-image: url(../images/reviews/desktop/bg_2_desktop@2x.png);
     }
   }
 
