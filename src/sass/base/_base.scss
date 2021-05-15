@@ -1,0 +1,54 @@
+:root {
+  --primary-text-color: rgba(46, 37, 32, 1);
+  --input-color: rgba(171, 129, 108, 0.5);
+  --button-background-color: rgba(171, 129, 108, 1);
+  --modal-background-color: rgba(254, 243, 228, 0.9);
+  --accent-background-color: rgba(254, 243, 228, 1);
+  --focus-hover-color: rgb(255, 139, 158);
+  --primary-text-color: rgba(46, 37, 32, 1);
+  --background-color: rgba(255, 255, 249, 1);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+  font-family: 'Caveat Brush', cursive;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
