@@ -62,6 +62,7 @@ $section-title-padding-desktop: 24px;
   .review {
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 290px;
     &:first-child,
     &:last-child {
@@ -151,7 +152,8 @@ $section-title-padding-desktop: 24px;
     }
   }
   .reviev__client-rate {
-    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
   }
   .review__client-header {
     display: none;
@@ -159,5 +161,17 @@ $section-title-padding-desktop: 24px;
   .review__counter {
     display: block;
     text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.21;
+    padding-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.25;
+      padding-bottom: 70px;
+    }
   }
 }
