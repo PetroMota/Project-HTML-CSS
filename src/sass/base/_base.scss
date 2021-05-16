@@ -7,6 +7,7 @@
   --focus-hover-color: rgb(255, 139, 158);
   --primary-text-color: rgba(46, 37, 32, 1);
   --background-color: rgba(255, 255, 249, 1);
+  --read-more-color: rgba(171, 129, 108, 1);
 }
 
 html {
@@ -22,7 +23,7 @@ html {
 body {
   color: var(--primary-text-color);
   background-color: var(--background-color);
-  font-family: 'Caveat Brush', cursive;
+  font-family: 'Caveat Brush', serif;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -44,6 +45,7 @@ body {
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+    // text-align: center;
   }
 }
 
@@ -58,8 +60,15 @@ h6 {
 }
 
 p {
+  color: var(--primary-text-color);
   margin-top: 0;
   margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  vertical-align: top;
 }
 
 .list {
@@ -69,7 +78,22 @@ p {
 }
 
 img {
-  display: block;
+  display: inline-block;
   height: auto;
   max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  color: var(--primary-text-color);
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 2.7;
+  align-items: center;
+  vertical-align: top;
 }
