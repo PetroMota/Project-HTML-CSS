@@ -42,10 +42,6 @@
 
 #more {
   display: none;
-
-  @media screen and (min-widthh: 1280px) {
-    visibility: hidden;
-  }
 }
 
 button {
@@ -58,6 +54,6 @@ button {
   margin-top: 5px;
 
   @media screen and (min-width: 1280px) {
-    visibility: hidden;
+    display: none;
   }
 }
