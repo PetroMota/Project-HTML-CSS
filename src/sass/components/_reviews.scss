@@ -1,62 +1,44 @@
-// замениеть на стандартные !!!
-$body-default-text-color: #2e2520;
-$body-default-header-color: #2e2520;
-$body-light-text-color: #ffffff;
-$body-dark-header-color: #000000;
-$body-default-background-color: #fffff9;
-$body-dark-background-color: #fef3e4;
-$body-default-icon-color: #674d40;
-$body-light-icon-color: #ab816c;
-$body-light-icon-color: #2e2520;
-
-$mobile: 320px;
-$tablet: 768px;
-$desktop: 1280px;
-
-$section-padding-mobile: 10px;
-$section-padding-desktop: 50px;
-
-$section-title-padding-mobile: 10px;
-$section-title-padding-desktop: 24px;
-
-// --------------------------------
-
 .reviews {
+  --body-default-background-color: #fffff9;
+  --body-default-text-color: #2e2520;
+  --body-default-header-color: #2e2520;
+  --body-light-icon-color: #ab816c;
+
   padding-top: 30px;
-  background-color: $body-default-background-color;
-  color: $body-default-text-color;
+  background-color: var(--body-default-background-color);
+  color: var(--body-default-text-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/reviews/mobile/bg_2_mobile.png);
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     background-image: url(../images/reviews/tablet/bg_2_tablet.png);
   }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1280px) {
     background-image: url(../images/reviews/desktop/bg_2_desktop.png);
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url(../images/reviews/mobile/bg_2_mobile@2x.png);
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       background-image: url(../images/reviews/tablet/bg_2_tablet@2x.png);
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
       background-image: url(../images/reviews/desktop/bg_2_desktop@2x.png);
     }
   }
 
   .reviews__title {
-    color: $body-default-header-color;
+    color: var(--body-default-header-color);
     text-align: center;
     font-family: Caveat Brush;
     font-size: 36px;
     line-height: 1.8;
-    margin-bottom: $section-title-padding-mobile;
-    @media screen and (min-width: $tablet) {
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
       font-size: 24px;
       line-height: 2.7;
-      margin-bottom: $section-title-padding-desktop;
+      margin-bottom: 24px;
     }
   }
   .review {
@@ -68,7 +50,7 @@ $section-title-padding-desktop: 24px;
     &:last-child {
       display: none;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       &:first-child,
       &:last-child {
         display: flex;
@@ -78,7 +60,7 @@ $section-title-padding-desktop: 24px;
         margin-right: 50px;
       }
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
       &:first-child,
       &:last-child {
         display: flex;
@@ -101,11 +83,11 @@ $section-title-padding-desktop: 24px;
       font-family: Montserrat;
       font-size: 16px;
       line-height: 1.25;
-      @media screen and (min-width: $tablet) {
+      @media screen and (min-width: 768px) {
         margin-bottom: 35px;
         max-width: 626px;
       }
-      @media screen and (min-width: $desktop) {
+      @media screen and (min-width: 1280px) {
         font-family: Montserrat;
         font-size: 18px;
         line-height: 1.22;
@@ -130,10 +112,10 @@ $section-title-padding-desktop: 24px;
     max-width: 110px;
     border-radius: 50%;
     margin-bottom: 10px;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       max-width: 186px;
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
       max-width: 234px;
     }
   }
@@ -147,7 +129,7 @@ $section-title-padding-desktop: 24px;
     line-height: 4.06;
 
     margin-bottom: 10px;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 15px;
     }
   }
@@ -166,10 +148,10 @@ $section-title-padding-desktop: 24px;
     font-size: 14px;
     line-height: 1.21;
     padding-bottom: 30px;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       padding-bottom: 40px;
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
       font-size: 16px;
       line-height: 1.25;
       padding-bottom: 70px;
@@ -180,13 +162,13 @@ $section-title-padding-desktop: 24px;
       width: 35px;
       content: '';
       position: absolute;
-      border-bottom: 1px solid $body-light-icon-color;
+      border-bottom: 1px solid var(--body-light-icon-color);
       top: 10%;
       left: 32%;
-      @media screen and (min-width: $tablet) {
+      @media screen and (min-width: 768px) {
         left: 44%;
       }
-      @media screen and (min-width: $desktop) {
+      @media screen and (min-width: 1280px) {
         left: 45%;
       }
     }
@@ -195,13 +177,13 @@ $section-title-padding-desktop: 24px;
       width: 35px;
       content: '';
       position: absolute;
-      border-bottom: 1px solid $body-light-icon-color;
+      border-bottom: 1px solid var(--body-light-icon-color);
       top: 10%;
       left: 55%;
-      @media screen and (min-width: $tablet) {
+      @media screen and (min-width: 768px) {
         left: 52%;
       }
-      @media screen and (min-width: $desktop) {
+      @media screen and (min-width: 1280px) {
         left: 52%;
       }
     }
