@@ -776,7 +776,6 @@ address {
 
 .contact__container {
   text-align: center;
-  padding-bottom: 82px;
 }
 
 .contact__text {
@@ -801,14 +800,21 @@ address {
   }
 }
 
-<<<<<<< HEAD
 .footer__container {
+  padding-top: 47px;
   padding-bottom: 19px;
 }
 
 @media screen and (min-width: 768px) {
   .footer__container {
+    padding-top: 50px;
     padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__container {
+    padding-top: 82px;
   }
 }
 
@@ -874,7 +880,6 @@ address {
   background-image: url(./../images/footer/mobile/flour_mobile.png);
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: contain;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -885,6 +890,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .footer--bg-image {
+    background-size: contain;
     background-image: url(./../images/footer/tablet/flour_tablet.png);
   }
 }
@@ -892,7 +898,21 @@ address {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .footer--bg-image {
     background-image: url(./../images/footer/tablet/flour_tablet@2x.png);
-=======
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer--bg-image {
+    background-image: url(./../images/footer/desktop/flour_desktop.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .footer--bg-image {
+    background-image: url(./../images/footer/desktop/flour_desktop@2x.png);
+  }
+}
+
 .registration {
   position: relative;
 }
@@ -1156,7 +1176,7 @@ address {
   }
 }
 
-.reviews__title {
+.reviews .reviews__title {
   color: var(--body-default-header-color);
   text-align: center;
   font-family: Caveat Brush;
@@ -1166,14 +1186,89 @@ address {
 }
 
 @media screen and (min-width: 768px) {
-  .reviews__title {
+  .reviews .reviews__title {
     font-size: 24px;
     line-height: 2.7;
     margin-bottom: 24px;
   }
 }
 
-.reviews__list {
+.reviews .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 290px;
+}
+
+.reviews .review:first-child, .reviews .review:last-child {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews .review:first-child, .reviews .review:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 110px;
+  }
+  .reviews .review:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews .review:first-child, .reviews .review:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 136px;
+  }
+  .reviews .review:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+
+.reviews .review__client-text.is-selected {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 290px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews .review__client-text.is-selected {
+    margin-bottom: 35px;
+    max-width: 626px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews .review__client-text.is-selected {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 35px;
+    max-width: 626px;
+  }
+}
+
+.reviews .review__client-text.no-selected {
+  display: none;
+}
+
+.reviews .reviews__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1189,100 +1284,25 @@ address {
   padding: 0;
 }
 
-.review {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 290px;
-}
-
-.review:first-child, .review:last-child {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .review:first-child, .review:last-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 110px;
-  }
-  .review:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .review:first-child, .review:last-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 136px;
-  }
-  .review:not(:last-child) {
-    margin-right: 60px;
-  }
-}
-
-.review__client-text.is-selected {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  text-align: center;
-  max-width: 290px;
-  font-family: Montserrat;
-  font-size: 16px;
-  line-height: 1.25;
-}
-
-@media screen and (min-width: 768px) {
-  .review__client-text.is-selected {
-    margin-bottom: 35px;
-    max-width: 626px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .review__client-text.is-selected {
-    font-family: Montserrat;
-    font-size: 18px;
-    line-height: 1.22;
-    margin-bottom: 35px;
-    max-width: 626px;
-  }
-}
-
-.review__client-text.no-selected {
-  display: none;
-}
-
-.review__client {
+.reviews .review__client {
   max-width: 110px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  .review__client {
+  .reviews .review__client {
     max-width: 186px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .review__client {
+  .reviews .review__client {
     max-width: 234px;
   }
 }
 
-.review__client-name {
+.reviews .review__client-name {
   text-align: center;
   font-family: Montserrat;
   font-style: italic;
@@ -1293,12 +1313,12 @@ address {
 }
 
 @media screen and (min-width: 768px) {
-  .review__client-name {
+  .reviews .review__client-name {
     margin-bottom: 15px;
   }
 }
 
-.review__client-rate {
+.reviews .reviev__client-rate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1306,11 +1326,11 @@ address {
       flex-wrap: nowrap;
 }
 
-.review__client-header {
+.reviews .review__client-header {
   display: none;
 }
 
-.review__counter {
+.reviews .review__counter {
   position: relative;
   display: block;
   text-align: center;
@@ -1321,20 +1341,20 @@ address {
 }
 
 @media screen and (min-width: 768px) {
-  .review__counter {
+  .reviews .review__counter {
     padding-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .review__counter {
+  .reviews .review__counter {
     font-size: 16px;
     line-height: 1.25;
     padding-bottom: 70px;
   }
 }
 
-.review__counter::before {
+.reviews .review__counter span::before {
   display: block;
   width: 35px;
   content: '';
@@ -1345,29 +1365,18 @@ address {
 }
 
 @media screen and (min-width: 768px) {
-  .review__counter::before {
+  .reviews .review__counter span::before {
     left: 44%;
->>>>>>> b7e9782a940158b35f2b6ddd5a1930bcb3b7b0af
   }
 }
 
 @media screen and (min-width: 1280px) {
-<<<<<<< HEAD
-  .footer--bg-image {
-    background-image: url(./../images/footer/desktop/flour_desktop.png);
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .footer--bg-image {
-    background-image: url(./../images/footer/desktop/flour_desktop@2x.png);
-=======
-  .review__counter::before {
+  .reviews .review__counter span::before {
     left: 45%;
   }
 }
 
-.review__counter::after {
+.reviews .review__counter span:after {
   display: block;
   width: 35px;
   content: '';
@@ -1378,15 +1387,14 @@ address {
 }
 
 @media screen and (min-width: 768px) {
-  .review__counter::after {
+  .reviews .review__counter span:after {
     left: 52%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .review__counter::after {
+  .reviews .review__counter span:after {
     left: 52%;
->>>>>>> b7e9782a940158b35f2b6ddd5a1930bcb3b7b0af
   }
 }
 /*# sourceMappingURL=main.css.map */
