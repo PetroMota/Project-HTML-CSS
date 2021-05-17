@@ -681,14 +681,12 @@ ul {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-left: 68px;
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 825px) {
   .hero-container {
-    padding-left: 229px;
     margin-bottom: 56px;
   }
 }
