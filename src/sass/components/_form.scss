@@ -14,7 +14,9 @@
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid var(--read-more-color);
+  border-bottom: 1px solid;
+  border-color: var(--read-more-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:not(:last-child) {
     margin-bottom: 25px;
@@ -28,14 +30,14 @@
     color: rgba(46, 37, 32, 0.7);
     border-bottom-color: var(--read-more-color);
   }
+
   &:focus:invalid {
     color: rgb(249, 84, 111);
-    border-bottom-color: rgb(249, 84, 111);
+    border-color: rgb(249, 84, 111);
   }
   &:placeholder-shown:focus {
-    border-bottom-color: var(--read-more-color);
+    border-color: var(--read-more-color);
   }
-
   &::placeholder {
     color: var(--input-color);
   }
@@ -45,17 +47,19 @@
   min-width: 145px;
   height: 40px;
   margin-top: 37px;
-  background: var(--read-more-color);
+  background-color: var(--read-more-color);
   border-radius: 25px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
   color: var(--background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus,
-  &:active .registration-button__text {
-    color: var(--focus-hover-color);
+  &:active {
+    background-color: var(--focus-hover-color);
   }
 
   @media screen and (min-width: 1280px) {
