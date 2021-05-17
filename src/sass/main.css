@@ -384,8 +384,7 @@ img {
   color: var(--background-color);
 }
 
-.form__button:hover, .form__button:focus,
-.form__button:active .registration-button__text {
+.form__button:hover, .form__button:focus, .form__button:active {
   color: var(--focus-hover-color);
 }
 
@@ -706,6 +705,167 @@ img {
     width: 31.48px;
     height: 21.3px;
   }
+}
+
+.registration {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .registration {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/src/images/registration/tablet/confetti_tablet.png);
+    background-image: url(/src/images/registration/tablet/confetti_tablet@2x.png);
+    background-image: url(/src/images/registration/tablet/donut_tablet.png);
+    background-image: url(/src/images/registration/tablet/donut_tablet@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .registration {
+    background-image: url(/src/images/registration/desktop/donut_desktop.png);
+    background-image: url(/src/images/registration/desktop/donut_desktop@2x.png);
+    background-image: url(/src/images/registration/desktop/confetti_desktop.png);
+    background-image: url(/src/images/registration/desktop/confetti_desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.registration__title {
+  margin-top: 15px;
+  z-index: 100;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .registration__title {
+    margin-bottom: 10px;
+    position: static;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.registration__bg {
+  min-width: 290px;
+  height: 100vh;
+  margin: auto 15px auto 15px;
+  background-color: var(--accent-bg-color);
+  -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+          box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+}
+
+.registration-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-data {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.time-location-price {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-top: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-location-price::after {
+  content: '';
+  width: 265px;
+  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+@media screen and (min-width: 768px) {
+  .time-location-price::after {
+    width: 190px;
+    margin-bottom: 30px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .time-location-price {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+
+.registration-form__title {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-form__title {
+    text-align: start;
+  }
+}
+
+.registration-form__field {
+  background-color: transparent;
+}
+
+.registration-form__field:focus::-webkit-input-placeholder {
+  color: rgba(171, 129, 108, 0.25);
+}
+
+.registration-form__field:focus:-ms-input-placeholder {
+  color: rgba(171, 129, 108, 0.25);
+}
+
+.registration-form__field:focus::-ms-input-placeholder {
+  color: rgba(171, 129, 108, 0.25);
+}
+
+.registration-form__field:focus::placeholder {
+  color: rgba(171, 129, 108, 0.25);
+}
+
+.form__button-text {
+  color: white;
 }
 
 .contact__container {

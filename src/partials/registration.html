@@ -21,9 +21,9 @@
           Apply your personal info <br />
           for registration
         </p>
-        <form class="registration-form__view">
+        <form class="form">
           <input
-            class="registration-form__field"
+            class="form__input"
             type="text"
             pattern="^[a-zA-Z\s]+$"
             name="name"
@@ -33,7 +33,7 @@
             required
           />
           <input
-            class="registration-form__field"
+            class="form__input"
             type="tel"
             pattern="(\+?\d[- .]*){7,13}"
             name="phone"
@@ -42,14 +42,14 @@
             required
           />
           <input
-            class="registration-form__field"
+            class="form__input"
             type="email"
             name="email"
             id="user_email"
             placeholder="Email"
           />
 
-          <button class="button registration-button registration-button__text" type="submit">
+          <button class="button form__button registration-button__text" type="submit">
             Register
           </button>
         </form>
