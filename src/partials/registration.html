@@ -1,0 +1,35 @@
+<section class="registration">
+    <h2 class="title registration__title">Registration</h2>
+    <div class="container registration__bg">
+        <container class="registration-data">
+            <div class="time-location-price">
+                <time datetime="2021-05-23T11:00+07:00"> May 23, 11:00</time>
+                <address>
+                    <a class="link" href="https://goo.gl/maps/uQZwg2VmSYYeFe7W9" target="_blank"
+                        rel="noopener noreferrer nofollow">
+                        New York
+                    </a>
+                </address>
+                <p class="price">$ 699</p>
+            </div>
+            <div class="registration-form">
+                <p class="registration-form__title">
+                    Apply your personal info <br />
+                    for registration
+                </p>
+                <form class="registration-form__view">
+                    <input class="registration-form__field" type="text" pattern="^[a-zA-Z\s]+$" name="name"
+                        minlength="3" id="user_name" placeholder="Your name" required />
+                    <input class="registration-form__field" type="tel" pattern="(\+?\d[- .]*){7,13}" name="phone"
+                        id="user_phone" placeholder="Phone number" required />
+                    <input class="registration-form__field" type="email" name="email" id="user_email"
+                        placeholder="Email" />
+
+                    <button class="button form__button registration-button__text" type="submit">
+                        Register
+                    </button>
+                </form>
+            </div>
+        </container>
+    </div>
+</section>
