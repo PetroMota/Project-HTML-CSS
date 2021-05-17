@@ -776,6 +776,15 @@ img {
   border-radius: 150px 150px 0px 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .registration__bg {
+    -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+            box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px;
+    max-height: 260px;
+  }
+}
+
 .registration-data {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -876,7 +885,7 @@ img {
   color: rgba(171, 129, 108, 0.25);
 }
 
-.form__button-text {
+.form--button-text {
   color: white;
 }
 

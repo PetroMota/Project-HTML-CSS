@@ -42,19 +42,17 @@
 .registration__bg {
   min-width: 290px;
   height: 100vh;
-  // display: flex;
-  // flex-wrap: nowrap;
   margin: auto 15px auto 15px;
   background-color: var(--accent-bg-color);
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 150px 150px 0px 0px;
 
-  // @media screen and (min-width: 768px) {
-  //   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-  //     4px 4px 4px rgba(171, 129, 108, 0.15);
-  //   border-radius: 150px;
-  //   max-height: 260px;
-  // }
+ @media screen and (min-width: 768px) {
+   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+     4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px;
+  max-height: 260px;
+}
 }
 .registration-data {
   // margin-top: 50px;
@@ -118,6 +116,6 @@
   }
 }
 
-.form__button-text {
+.form--button-text {
   color: rgba(255, 255, 255, 1);
 }
