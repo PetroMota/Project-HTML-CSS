@@ -296,6 +296,12 @@ img {
   margin-top: 5px;
 }
 
+@media screen and (min-width: 1280px) {
+  .button {
+    display: none;
+  }
+}
+
 .form {
   max-width: 265px;
   display: -webkit-box;
@@ -443,26 +449,21 @@ img {
   display: none;
 }
 
-button {
-  font-family: Caveat Brush;
-  color: var(--read-more-color);
-  border: none;
-  background-color: transparent;
-  font-size: 18px;
-  line-height: 3.61;
-  padding: 0;
-  margin-top: 5px;
-}
-
-@media screen and (min-width: 1280px) {
-  button {
-    display: none;
-  }
-}
-
 .program {
   background-color: var(--background-color);
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1279.98px) {
+  .program__button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .program__title {
+    text-align: center;
+  }
 }
 
 .program .program-container {
@@ -519,22 +520,6 @@ button {
 
 @media screen and (min-widthh: 1280px) {
   .program #much {
-    visibility: hidden;
-  }
-}
-
-.program button {
-  font-family: Caveat Brush;
-  color: var(--read-more-color);
-  border: none;
-  background-color: transparent;
-  font-size: 18px;
-  padding: 0;
-  margin-top: 5px;
-}
-
-@media screen and (min-width: 1280px) {
-  .program button {
     visibility: hidden;
   }
 }

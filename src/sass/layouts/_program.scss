@@ -2,6 +2,18 @@
   background-color: var(--background-color);
   margin-bottom: 25px;
 
+  &__button {
+    @media screen and (max-width: 1279.98px) {
+      display: block;
+    }
+  }
+
+  &__title {
+    @media screen and (max-width: 767.98px) {
+      text-align: center;
+    }
+  }
+
   .program-container {
     margin-bottom: 25px;
     justify-content: center;
@@ -39,19 +51,19 @@
     }
   }
 
-  button {
-    font-family: Caveat Brush;
-    color: var(--read-more-color);
-    border: none;
-    background-color: transparent;
-    font-size: 18px;
-    padding: 0;
-    margin-top: 5px;
+  // button {
+  //   font-family: Caveat Brush;
+  //   color: var(--read-more-color);
+  //   border: none;
+  //   background-color: transparent;
+  //   font-size: 18px;
+  //   padding: 0;
+  //   margin-top: 5px;
 
-    @media screen and (min-width: 1280px) {
-      visibility: hidden;
-    }
-  }
+  //   @media screen and (min-width: 1280px) {
+  //     visibility: hidden;
+  //   }
+  // }
 
   .program-list__event {
     display: flex;
