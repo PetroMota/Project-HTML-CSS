@@ -284,6 +284,10 @@ img {
   }
 }
 
+address {
+  font-style: normal;
+}
+
 .button {
   font-family: Caveat Brush, sans-serif;
   color: var(--read-more-color);
@@ -324,7 +328,10 @@ img {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid var(--read-more-color);
+  border-bottom: 1px solid;
+  border-color: var(--read-more-color);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:not(:last-child) {
@@ -342,11 +349,11 @@ img {
 
 .form__input:focus:invalid {
   color: #f9546f;
-  border-bottom-color: #f9546f;
+  border-color: #f9546f;
 }
 
 .form__input:placeholder-shown:focus {
-  border-bottom-color: var(--read-more-color);
+  border-color: var(--read-more-color);
 }
 
 .form__input::-webkit-input-placeholder {
@@ -369,7 +376,7 @@ img {
   min-width: 145px;
   height: 40px;
   margin-top: 37px;
-  background: var(--read-more-color);
+  background-color: var(--read-more-color);
   border-radius: 25px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -382,11 +389,12 @@ img {
           justify-content: center;
   line-height: 1;
   color: var(--background-color);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__button:hover, .form__button:focus,
-.form__button:active .registration-button__text {
-  color: var(--focus-hover-color);
+.form__button:hover, .form__button:focus, .form__button:active {
+  background-color: var(--focus-hover-color);
 }
 
 @media screen and (min-width: 1280px) {
@@ -394,6 +402,64 @@ img {
     min-width: 158px;
     height: 45px;
     font-size: 24px;
+  }
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 9px;
+}
+
+@media screen and (min-width: 1280px) {
+  .social-list__item:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+.social-list__icon {
+  height: 15px;
+  fill: var(--primary-text-color);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: var(--focus-hover-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .social-list__icon {
+    height: 19px;
+  }
+}
+
+.social-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 19px;
+  height: 15px;
+}
+
+@media screen and (min-width: 1280px) {
+  .social-list__link {
+    width: 24px;
+    height: 19px;
   }
 }
 
@@ -735,6 +801,98 @@ img {
   }
 }
 
+<<<<<<< HEAD
+.footer__container {
+  padding-bottom: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    padding-bottom: 21px;
+  }
+}
+
+.footer__social-list {
+  margin-bottom: 34px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social-list {
+    margin-bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__social-list {
+    margin-bottom: 35px;
+  }
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__link {
+  font-size: 16px;
+  line-height: 1.25;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__link:hover, .footer__link:focus {
+  color: var(--focus-hover-color);
+}
+
+.footer__icon-phone {
+  width: 13px;
+  height: 13px;
+}
+
+.footer__icon-location {
+  width: 11px;
+  height: 14px;
+  z-index: 10000;
+}
+
+.footer__icon {
+  margin-right: 3px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__link:hover .footer__icon,
+.footer__link:focus .footer__icon {
+  fill: var(--focus-hover-color);
+}
+
+.footer--bg-image {
+  background-image: url(./../images/footer/mobile/flour_mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer--bg-image {
+    background-image: url(./../images/footer/mobile/flour_mobile@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer--bg-image {
+    background-image: url(./../images/footer/tablet/flour_tablet.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .footer--bg-image {
+    background-image: url(./../images/footer/tablet/flour_tablet@2x.png);
+=======
 .registration {
   position: relative;
 }
@@ -1189,10 +1347,21 @@ img {
 @media screen and (min-width: 768px) {
   .review__counter::before {
     left: 44%;
+>>>>>>> b7e9782a940158b35f2b6ddd5a1930bcb3b7b0af
   }
 }
 
 @media screen and (min-width: 1280px) {
+<<<<<<< HEAD
+  .footer--bg-image {
+    background-image: url(./../images/footer/desktop/flour_desktop.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .footer--bg-image {
+    background-image: url(./../images/footer/desktop/flour_desktop@2x.png);
+=======
   .review__counter::before {
     left: 45%;
   }
@@ -1217,6 +1386,7 @@ img {
 @media screen and (min-width: 1280px) {
   .review__counter::after {
     left: 52%;
+>>>>>>> b7e9782a940158b35f2b6ddd5a1930bcb3b7b0af
   }
 }
 /*# sourceMappingURL=main.css.map */
