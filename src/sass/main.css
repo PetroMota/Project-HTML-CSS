@@ -1627,7 +1627,7 @@ ul {
   }
 }
 
-.reviews .reviev__client-rate {
+.reviews .review__client--rate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
