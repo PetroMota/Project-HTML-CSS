@@ -1,7 +1,11 @@
 @import './vendors/modern-normalize';
+
 @import './base/base';
+
+@import './components/button';
+@import './components/form';
+
 @import './layouts/about-us';
-
 @import './layouts/program';
+@import './layouts/contact';
 @import './components/reviews';
-
