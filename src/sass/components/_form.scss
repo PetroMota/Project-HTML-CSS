@@ -1,5 +1,5 @@
 .form {
-  max-width: 265px;
+  max-width: 290px;
   display: flex;
   flex-direction: column;
   margin-right: auto;
@@ -62,7 +62,7 @@
     background-color: var(--focus-hover-color);
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 825px) {
     min-width: 158px;
     height: 45px;
     font-size: 24px;

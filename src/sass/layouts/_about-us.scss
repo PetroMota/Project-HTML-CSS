@@ -2,22 +2,22 @@
   background-color: var(--background-color);
 
   &__picture {
-    @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    @media screen and (min-width: 635px) and (max-width: 824.98px) {
       width: 329.65px;
     }
 
-    @media screen and(min-width: 1280px) {
+    @media screen and(min-width: 825px) {
     }
   }
   &__content {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 635px) {
       display: inline-block;
       margin-left: 24.35px;
       vertical-align: top;
       width: 325px;
     }
 
-    @media screen and(min-width: 1280px) {
+    @media screen and(min-width: 825px) {
       padding-top: 65px;
       width: 392px;
       margin-left: 76px;
@@ -25,21 +25,27 @@
   }
 
   &__title {
-    @media screen and(max-width: 767.98px) {
+    @media screen and(max-width: 634.98px) {
       text-align: center;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 825px) {
       font-size: 36px;
       line-height: 1.81;
     }
   }
 
   &__text {
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 825px) {
       font-size: 18px;
       line-height: 1.2;
       margin-top: 10px;
+    }
+  }
+
+  &__button {
+    @media screen and (min-width: 825px) {
+      display: none;
     }
   }
 }

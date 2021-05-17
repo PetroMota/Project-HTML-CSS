@@ -10,20 +10,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/reviews/mobile/bg_2_mobile.png);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 635px) {
     background-image: url(../images/reviews/tablet/bg_2_tablet.png);
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 825px) {
     background-image: url(../images/reviews/desktop/bg_2_desktop.png);
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url(../images/reviews/mobile/bg_2_mobile@2x.png);
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 635px) {
       background-image: url(../images/reviews/tablet/bg_2_tablet@2x.png);
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 825px) {
       background-image: url(../images/reviews/desktop/bg_2_desktop@2x.png);
     }
   }
@@ -35,7 +35,7 @@
     font-size: 36px;
     line-height: 1.8;
     margin-bottom: 10px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 635px) {
       font-size: 24px;
       line-height: 2.7;
       margin-bottom: 24px;
@@ -50,7 +50,7 @@
     &:last-child {
       display: none;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 635px) {
       &:first-child,
       &:last-child {
         display: flex;
@@ -60,7 +60,7 @@
         margin-right: 50px;
       }
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 825px) {
       &:first-child,
       &:last-child {
         display: flex;
@@ -83,11 +83,11 @@
       font-family: Montserrat;
       font-size: 16px;
       line-height: 1.25;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 635px) {
         margin-bottom: 35px;
         max-width: 626px;
       }
-      @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 825px) {
         font-family: Montserrat;
         font-size: 18px;
         line-height: 1.22;
@@ -112,10 +112,10 @@
     max-width: 110px;
     border-radius: 50%;
     margin-bottom: 10px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 635px) {
       max-width: 186px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 825px) {
       max-width: 234px;
     }
   }
@@ -129,7 +129,7 @@
     line-height: 4.06;
 
     margin-bottom: 10px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 635px) {
       margin-bottom: 15px;
     }
   }
@@ -148,10 +148,10 @@
     font-size: 14px;
     line-height: 1.21;
     padding-bottom: 30px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 635px) {
       padding-bottom: 40px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 825px) {
       font-size: 16px;
       line-height: 1.25;
       padding-bottom: 70px;
@@ -165,10 +165,10 @@
       border-bottom: 1px solid var(--body-light-icon-color);
       top: 10%;
       left: 32%;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 635px) {
         left: 44%;
       }
-      @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 825px) {
         left: 45%;
       }
     }
@@ -180,10 +180,10 @@
       border-bottom: 1px solid var(--body-light-icon-color);
       top: 10%;
       left: 55%;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 635px) {
         left: 52%;
       }
-      @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 825px) {
         left: 52%;
       }
     }
