@@ -1,0 +1,191 @@
+.reviews {
+  --body-default-background-color: #fffff9;
+  --body-default-text-color: #2e2520;
+  --body-default-header-color: #2e2520;
+  --body-light-icon-color: #ab816c;
+
+  padding-top: 30px;
+  background-color: var(--body-default-background-color);
+  color: var(--body-default-text-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/reviews/mobile/bg_2_mobile.png);
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/reviews/tablet/bg_2_tablet.png);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/reviews/desktop/bg_2_desktop.png);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/reviews/mobile/bg_2_mobile@2x.png);
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/reviews/tablet/bg_2_tablet@2x.png);
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/reviews/desktop/bg_2_desktop@2x.png);
+    }
+  }
+
+  .reviews__title {
+    color: var(--body-default-header-color);
+    text-align: center;
+    font-family: Caveat Brush;
+    font-size: 36px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 2.7;
+      margin-bottom: 24px;
+    }
+  }
+  .review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 290px;
+    &:first-child,
+    &:last-child {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      &:first-child,
+      &:last-child {
+        display: flex;
+        max-width: 110px;
+      }
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      &:first-child,
+      &:last-child {
+        display: flex;
+        max-width: 136px;
+      }
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  .review__client-text {
+    &.is-selected {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 290px;
+      font-family: Montserrat;
+      font-size: 16px;
+      line-height: 1.25;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 35px;
+        max-width: 626px;
+      }
+      @media screen and (min-width: 1280px) {
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: 1.22;
+        margin-bottom: 35px;
+        max-width: 626px;
+      }
+    }
+    &.no-selected {
+      display: none;
+    }
+  }
+
+  .reviews__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 0;
+  }
+
+  .review__client {
+    max-width: 110px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      max-width: 186px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 234px;
+    }
+  }
+  .review__client-name {
+    text-align: center;
+
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 4.06;
+
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+  .reviev__client-rate {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .review__client-header {
+    display: none;
+  }
+  .review__counter {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.21;
+    padding-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.25;
+      padding-bottom: 70px;
+    }
+
+    & span::before {
+      display: block;
+      width: 35px;
+      content: '';
+      position: absolute;
+      border-bottom: 1px solid var(--body-light-icon-color);
+      top: 10%;
+      left: 32%;
+      @media screen and (min-width: 768px) {
+        left: 44%;
+      }
+      @media screen and (min-width: 1280px) {
+        left: 45%;
+      }
+    }
+    & span:after {
+      display: block;
+      width: 35px;
+      content: '';
+      position: absolute;
+      border-bottom: 1px solid var(--body-light-icon-color);
+      top: 10%;
+      left: 55%;
+      @media screen and (min-width: 768px) {
+        left: 52%;
+      }
+      @media screen and (min-width: 1280px) {
+        left: 52%;
+      }
+    }
+  }
+}
