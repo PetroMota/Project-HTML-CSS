@@ -1,7 +1,7 @@
 .navigation-list {
   display: inline-flex;
   font-size: 18px;
-  @media screen and (max-width: 824.98px) {
+  @media screen and (max-width: 1279.98px) {
     display: none;
   }
 }
@@ -13,7 +13,7 @@
 .navigation {
   display: flex;
 
-  @media screen and (min-width: 825px) {
+  @media screen and (min-width: 1280px) {
     align-items: center;
   }
 }

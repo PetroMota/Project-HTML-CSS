@@ -8,11 +8,11 @@
   border: none;
   cursor: pointer;
 
-  @media screen and (min-width: 635px) {
+  @media screen and (min-width: 768px) {
     top: 25px;
   }
 
-  @media screen and (min-width: 825px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }

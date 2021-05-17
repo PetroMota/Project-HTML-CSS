@@ -12,11 +12,11 @@ ul {
   margin-left: 0;
   z-index: -1;
 
-  @media screen and (min-width: 635px) {
+  @media screen and (min-width: 768px) {
     margin-left: 254px;
   }
 
-  @media screen and (min-width: 825px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 561px;
   }
 }
@@ -24,9 +24,15 @@ ul {
 .spoon {
   display: none;
 
-  @media screen and (min-width: 825px) {
+  @media screen and (min-width: 1280px) {
     display: block;
     position: absolute;
     margin-top: 166px;
+  }
+}
+
+.header__container {
+  @media screen and(min-width: 825px) {
+    display: inline-flex;
   }
 }
