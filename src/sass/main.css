@@ -235,7 +235,7 @@ img {
   vertical-align: top;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 825px) {
   .title--size {
     font-size: 36px;
     line-height: 1.81;
@@ -248,15 +248,11 @@ img {
   line-height: 1.25;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 825px) {
   .text--size {
     font-size: 18px;
     line-height: 1.2;
   }
-}
-
-address {
-  font-style: normal;
 }
 
 .button {
