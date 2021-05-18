@@ -22,21 +22,20 @@
     margin-bottom: 25px;
   }
 
+  &:valid:not(:focus) {
+    color: rgba(46, 37, 32, 0.7);
+  }
+  &:invalid:not(:focus) {
+    color: rgb(249, 84, 111);
+  }
+  &:not(:nth-child(3)) {
+    margin-bottom: 25px;
+  }
   &:focus {
     outline: none;
-  }
-
-  &:valid {
-    color: rgba(46, 37, 32, 0.7);
-    border-bottom-color: var(--read-more-color);
-  }
-
-  &:focus:invalid {
-    color: rgb(249, 84, 111);
-    border-color: rgb(249, 84, 111);
-  }
-  &:placeholder-shown:focus {
-    border-color: var(--read-more-color);
+    &::placeholder {
+      color: transparent;
+    }
   }
   &::placeholder {
     color: var(--input-color);
@@ -59,7 +58,7 @@
   &:hover,
   &:focus,
   &:active {
-    background-color: var(--focus-hover-color);
+    color: var(--focus-hover-color);
   }
 
   @media screen and (min-width: 1280px) {

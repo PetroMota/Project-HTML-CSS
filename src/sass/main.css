@@ -299,22 +299,36 @@ img {
   margin-bottom: 25px;
 }
 
+.form__input:valid:not(:focus) {
+  color: rgba(46, 37, 32, 0.7);
+}
+
+.form__input:invalid:not(:focus) {
+  color: #f9546f;
+}
+
+.form__input:not(:nth-child(3)) {
+  margin-bottom: 25px;
+}
+
 .form__input:focus {
   outline: none;
 }
 
-.form__input:valid {
-  color: rgba(46, 37, 32, 0.7);
-  border-bottom-color: var(--read-more-color);
+.form__input:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 
-.form__input:focus:invalid {
-  color: #f9546f;
-  border-color: #f9546f;
+.form__input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
-.form__input:placeholder-shown:focus {
-  border-color: var(--read-more-color);
+.form__input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__input:focus::placeholder {
+  color: transparent;
 }
 
 .form__input::-webkit-input-placeholder {
@@ -355,7 +369,7 @@ img {
 }
 
 .form__button:hover, .form__button:focus, .form__button:active {
-  background-color: var(--focus-hover-color);
+  color: var(--focus-hover-color);
 }
 
 @media screen and (min-width: 1280px) {
@@ -1537,22 +1551,74 @@ ul {
   }
 }
 
-.registration-form_view {
-  padding: 11px 12px 0px 12px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.registration {
+  background-color: var(--accent-background-color);
 }
 
-.registration-form__field {
-  width: 100%;
-  max-width: 265px;
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .registration {
+    background-image: url(/src/images/registration/tablet/donut_tablet.png), url(/src/images/registration/tablet/confetti_tablet.png);
+    background-image: url(/src/images/registration/tablet/donut_tablet@2x.png), url(/src/images/registration/tablet/confetti_tablet@2x.png);
+    background-size: 235px 235px, 280px 280px;
+    background-position: left top, right bottom -150%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .registration {
+    background-image: url(/src/images/registration/desktop/donut_desktop.png), url(/src/images/registration/desktop/confetti_desktop.png);
+    background-image: url(/src/images/registration/desktop/donut_desktop@2x.png), url(/src/images/registration/desktop/confetti_desktop@2x.png);
+    background-size: 250px 250px, 600px 600px;
+    background-position: top left 70px, bottom 150% right;
+    background-repeat: no-repeat;
+  }
+}
+
+.registration__title {
+  margin-top: 15px;
+  z-index: 100;
+  text-align: center;
+}
+
+.registration__bg {
+  max-height: 510px;
+  background-color: var(--background-color);
+  -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+          box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .registration__bg {
+    -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+            box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px;
+    max-height: 260px;
+  }
+}
+
+.registration-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-data {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.time-location-price {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-top: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1560,57 +1626,87 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-location-price::after {
+  content: "";
+  width: 265px;
+  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+@media screen and (min-width: 768px) {
+  .time-location-price::after {
+    width: 190px;
+    margin-bottom: 30px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .time-location-price {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+
+.registration-form {
+  min-width: 265px;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-form:last-child {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.registration-form__title {
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-form__title {
+    text-align: start;
+  }
+}
+
+.form__input {
   background-color: transparent;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-bottom: 1px solid var(--button-background-color);
 }
 
-.registration-form__field:valid:not(:focus) {
-  color: rgba(46, 37, 32, 0.7);
+.form__input:nth-child(3) {
+  margin-bottom: 0;
 }
 
-.registration-form__field:invalid:not(:focus) {
-  color: #f9546f;
+@media screen and (min-width: 768px) {
+  .form {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.registration-form__field:not(:nth-child(3)) {
-  margin-bottom: 25px;
-}
-
-.registration-form__field:focus {
-  outline: none;
-  border-bottom-color: var(--focus-hover-color);
-}
-
-.registration-form__field:focus::-webkit-input-placeholder {
-  color: rgba(171, 129, 108, 0.25);
-}
-
-.registration-form__field:focus:-ms-input-placeholder {
-  color: rgba(171, 129, 108, 0.25);
-}
-
-.registration-form__field:focus::-ms-input-placeholder {
-  color: rgba(171, 129, 108, 0.25);
-}
-
-.registration-form__field:focus::placeholder {
-  color: rgba(171, 129, 108, 0.25);
-}
-
-.registration-form__field::-webkit-input-placeholder {
-  color: var(--input-color);
-}
-
-.registration-form__field:-ms-input-placeholder {
-  color: var(--input-color);
-}
-
-.registration-form__field::-ms-input-placeholder {
-  color: var(--input-color);
-}
+.form--button-text {
 
 .registration-form__field::placeholder {
   color: var(--input-color);
