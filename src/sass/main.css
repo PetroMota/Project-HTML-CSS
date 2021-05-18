@@ -1137,7 +1137,6 @@ ul {
 
 .contact__container {
   text-align: center;
-  padding-bottom: 82px;
 }
 
 .contact__text {
@@ -1163,12 +1162,20 @@ ul {
 }
 
 .footer__container {
+  padding-top: 47px;
   padding-bottom: 19px;
 }
 
 @media screen and (min-width: 635px) {
   .footer__container {
+    padding-top: 50px;
     padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__container {
+    padding-top: 82px;
   }
 }
 
@@ -1234,7 +1241,6 @@ ul {
   background-image: url(./../images/footer/mobile/flour_mobile.png);
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: contain;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1245,6 +1251,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .footer--bg-image {
+    background-size: contain;
     background-image: url(./../images/footer/tablet/flour_tablet.png);
   }
 }
