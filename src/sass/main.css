@@ -620,12 +620,12 @@ ul {
 }
 
 .bg-image {
-  position: fixed;
+  position: absolute;
   z-index: -2;
 }
 
 .header__donuts {
-  position: fixed;
+  position: absolute;
   margin-top: 0;
   margin-left: 0;
   z-index: -1;
@@ -655,7 +655,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 825px) and (max-width: 1279.98px) {
+@media screen and (min-width: 825px) {
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -821,10 +821,6 @@ ul {
   .about-us__button {
     display: none;
   }
-}
-
-#more {
-  display: none;
 }
 
 .program {
