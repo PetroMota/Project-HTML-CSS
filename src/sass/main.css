@@ -765,10 +765,6 @@ ul {
   }
 }
 
-.about-us {
-  background-color: var(--background-color);
-}
-
 @media screen and (min-width: 635px) {
   .about-us__container {
     display: -webkit-box;
@@ -783,7 +779,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 635px) {
   .about-us__content {
     display: inline-block;
     margin-left: 24.35px;
