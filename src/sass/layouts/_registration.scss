@@ -1,19 +1,19 @@
 .registration {
   background-color: var(--accent-background-color);
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-    background-image: url(/src/images/registration/tablet/donut_tablet.png),
-      url(/src/images/registration/tablet/confetti_tablet.png);
-    background-image: url(/src/images/registration/tablet/donut_tablet@2x.png),
-      url(/src/images/registration/tablet/confetti_tablet@2x.png);
+    background-image: url(/images/registration/tablet/donut_tablet.png),
+      url(/images/registration/tablet/confetti_tablet.png);
+    background-image: url(/images/registration/tablet/donut_tablet@2x.png),
+      url(/images/registration/tablet/confetti_tablet@2x.png);
     background-size: 235px 235px, 280px 280px;
     background-position: left top, right bottom -150%;
     background-repeat: no-repeat;
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(/src/images/registration/desktop/donut_desktop.png),
-      url(/src/images/registration/desktop/confetti_desktop.png);
-    background-image: url(/src/images/registration/desktop/donut_desktop@2x.png),
-      url(/src/images/registration/desktop/confetti_desktop@2x.png);
+    background-image: url(/images/registration/desktop/donut_desktop.png),
+      url(/images/registration/desktop/confetti_desktop.png);
+    background-image: url(/images/registration/desktop/donut_desktop@2x.png),
+      url(/images/registration/desktop/confetti_desktop@2x.png);
     background-size: 250px 250px, 600px 600px;
     background-position: top left 70px, bottom 150% right;
     background-repeat: no-repeat;
@@ -28,14 +28,11 @@
 .registration__bg {
   max-height: 510px;
   background-color: var(--background-color);
-  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-    4px 4px 4px rgba(171, 129, 108, 0.15);
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 150px 150px 0px 0px;
 
-
   @media screen and (min-width: 768px) {
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-      4px 4px 4px rgba(171, 129, 108, 0.15);
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px;
     max-height: 260px;
   }
@@ -83,15 +80,15 @@
 .registration-form {
   min-width: 265px;
   @media screen and (min-width: 768px) {
-  &:last-child {
-    flex-wrap: nowrap;
+    &:last-child {
+      flex-wrap: nowrap;
+    }
   }
-}
 }
 .registration-form__title {
   text-align: center;
   margin-bottom: 17px;
-  
+
   @media screen and (min-width: 768px) {
     text-align: start;
   }
