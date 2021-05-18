@@ -725,12 +725,12 @@ img {
   background-color: var(--accent-background-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .registration {
     background-image: url(/src/images/registration/tablet/donut_tablet.png), url(/src/images/registration/tablet/confetti_tablet.png);
     background-image: url(/src/images/registration/tablet/donut_tablet@2x.png), url(/src/images/registration/tablet/confetti_tablet@2x.png);
     background-size: 235px 235px, 280px 280px;
-    background-position: left top, right bottom -50%;
+    background-position: left top, right bottom -150%;
     background-repeat: no-repeat;
   }
 }
@@ -748,29 +748,12 @@ img {
 .registration__title {
   margin-top: 15px;
   z-index: 100;
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(100%, 0);
-          transform: translate(100%, 0);
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .registration__title {
-    margin-bottom: 10px;
-    position: static;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
 .registration__bg {
-  min-width: 290px;
-  height: 100vh;
-  margin: auto 15px auto 15px;
-  background-color: var(--accent-bg-color);
+  max-height: 510px;
+  background-color: var(--background-color);
   -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
           box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 150px 150px 0px 0px;
@@ -791,8 +774,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 @media screen and (min-width: 768px) {
@@ -821,7 +802,7 @@ img {
 }
 
 .time-location-price::after {
-  content: '';
+  content: "";
   width: 265px;
   border-bottom: 1px solid rgba(171, 129, 108, 0.5);
   -webkit-transform: rotate(0deg);
@@ -855,8 +836,20 @@ img {
   margin-top: 25px;
 }
 
+.registration-form {
+  min-width: 265px;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-form:last-child {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .registration-form__title {
   text-align: center;
+  margin-bottom: 17px;
 }
 
 @media screen and (min-width: 768px) {
@@ -865,24 +858,22 @@ img {
   }
 }
 
-.registration-form__field {
+.form__input {
   background-color: transparent;
 }
 
-.registration-form__field:focus::-webkit-input-placeholder {
-  color: rgba(171, 129, 108, 0.25);
+.form__input:nth-child(3) {
+  margin-bottom: 0;
 }
 
-.registration-form__field:focus:-ms-input-placeholder {
-  color: rgba(171, 129, 108, 0.25);
-}
-
-.registration-form__field:focus::-ms-input-placeholder {
-  color: rgba(171, 129, 108, 0.25);
-}
-
-.registration-form__field:focus::placeholder {
-  color: rgba(171, 129, 108, 0.25);
+@media screen and (min-width: 768px) {
+  .form {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .form--button-text {
