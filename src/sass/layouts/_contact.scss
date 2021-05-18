@@ -14,10 +14,14 @@
 
 .contact__form {
   @media screen and (min-width: 768px) {
-    max-width: 410px;
+    & {
+      max-width: 410px;
+    }
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 430px;
+    & {
+      max-width: 430px;
+    }
   }
 }
