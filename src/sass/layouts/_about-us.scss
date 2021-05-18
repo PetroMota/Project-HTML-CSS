@@ -1,5 +1,9 @@
 .about-us {
-  background-color: var(--background-color);
+  &__container {
+    @media screen and (min-width: 635px) {
+      display: flex;
+    }
+  }
 
   &__picture {
     @media screen and (min-width: 768px) and (max-width: 1279.98px) {
@@ -10,7 +14,7 @@
     }
   }
   &__content {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 635px) {
       display: inline-block;
       margin-left: 24.35px;
       vertical-align: top;
@@ -42,8 +46,10 @@
       margin-top: 10px;
     }
   }
-}
 
-#more {
-  display: none;
+  &__button {
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
 }
