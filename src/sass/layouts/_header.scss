@@ -3,11 +3,11 @@ ul {
 }
 
 .bg-image {
-  position: absolute;
+  position: fixed;
   z-index: -2;
 }
 .header__donuts {
-  position: absolute;
+  position: fixed;
   margin-top: 0;
   margin-left: 0;
   z-index: -1;
@@ -32,7 +32,7 @@ ul {
 }
 
 .header__container {
-  @media screen and(min-width: 825px) {
+  @media screen and (min-width: 825px) and (max-width: 1279.98px) {
     display: flex;
   }
 }
