@@ -30,18 +30,19 @@
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script src="../src/mobile.js"></script>
     <script type="text/javascript">
       var i = 0;
       function qwerty() {
         if (!i) {
           document.getElementById('more').style.display = 'inline';
           document.getElementById('dots').style.display = 'none';
-          document.getElementById('qwerty').innerHTML = 'Less';
+          document.getElementById('read').innerHTML = 'Less';
           i = 1;
         } else {
           document.getElementById('more').style.display = 'none';
           document.getElementById('dots').style.display = 'inline';
-          document.getElementById('qwerty').innerHTML = 'Read more';
+          document.getElementById('read').innerHTML = 'Read more';
           i = 0;
         }
 
@@ -49,6 +50,31 @@
           document.getElementById('more').style.display = 'inline';
         }
       }
+    </script>
+    
+        <script type="text/javascript">
+        var i = 0;
+        function qwert() {
+            if (!i) {
+                document.getElementById("much").style.
+                    display = "inline";
+                document.getElementById("touch").style.
+                    display = "none";
+                document.getElementById("reading").innerHTML = "Less"
+                i = 1;
+            }
+            else {
+                document.getElementById("much").style.
+                    display = "none";
+                document.getElementById("touch").style.
+                    display = "inline";
+                document.getElementById("reading").innerHTML = "Read more"
+                i = 0;
+            }
+                  if (window.screen.availWidth >= 1280) {
+          document.getElementById('more').style.display = 'inline';
+        }
+        }
     </script>
   </body>
 </html>

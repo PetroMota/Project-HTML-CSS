@@ -7,10 +7,19 @@
         "base/_base.scss",
         "components/_button.scss",
         "components/_form.scss",
+        "components/_logo.scss",
+        "components/_social-list.scss",
+        "components/_modal.scss",
+        "components/_menu.scss",
+        "components/_container.scss",
+        "layouts/_header.scss",
+        "layouts/_hero.scss",
         "layouts/_about-us.scss",
         "layouts/_program.scss",
+        "layouts/_reviews.scss",
         "layouts/_registration.scss",
-        "layouts/_contact.scss"
+        "layouts/_contact.scss",
+        "layouts/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
