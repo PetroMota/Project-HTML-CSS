@@ -72,31 +72,41 @@
     }
   }
 
+  .review__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .review__client-text {
-    &.is-selected {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 30px;
-      text-align: center;
-      max-width: 320px;
-      font-family: Montserrat;
-      font-size: 16px;
-      line-height: 1.25;
-      @media screen and (min-width: 768px) {
-        margin-bottom: 35px;
-        max-width: 626px;
-      }
-      @media screen and (min-width: 1280px) {
-        font-family: Montserrat;
-        font-size: 18px;
-        line-height: 1.22;
-        margin-bottom: 35px;
-        max-width: 626px;
-      }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 320px;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 1.25;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 35px;
+      max-width: 626px;
     }
-    &.no-selected {
-      display: none;
+    @media screen and (min-width: 1280px) {
+      font-family: Montserrat;
+      font-size: 18px;
+      line-height: 1.22;
+      margin-bottom: 35px;
+      max-width: 626px;
+    }
+  }
+  .swiper-container {
+    max-width: 320px;
+    @media screen and (min-width: 768px) {
+      max-width: 626px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 626px;
     }
   }
 
@@ -106,6 +116,7 @@
     justify-content: center;
     align-self: flex-start;
     padding: 0;
+    margin: 0;
   }
 
   .review__client {
@@ -113,21 +124,19 @@
     border-radius: 50%;
     margin-bottom: 10px;
     @media screen and (min-width: 768px) {
-      max-width: 186px;
+      min-width: 186px;
     }
     @media screen and (min-width: 1280px) {
-      max-width: 234px;
+      min-width: 234px;
     }
   }
   .review__client-name {
     text-align: center;
-
     font-family: Montserrat;
     font-style: italic;
     font-weight: 500;
     font-size: 16px;
-    line-height: 4.06;
-
+    line-height: 2.06;
     margin-bottom: 10px;
     @media screen and (min-width: 768px) {
       margin-bottom: 15px;
@@ -157,34 +166,34 @@
       padding-bottom: 70px;
     }
 
-    & span::before {
+    & :before {
       display: block;
       width: 35px;
       content: '';
       position: absolute;
       border-bottom: 1px solid var(--body-light-icon-color);
       top: 10%;
-      left: 32%;
+      left: 30%;
       @media screen and (min-width: 768px) {
-        left: 44%;
+        left: 40%;
       }
       @media screen and (min-width: 1280px) {
-        left: 45%;
+        left: 40%;
       }
     }
-    & span:after {
+    & :after {
       display: block;
       width: 35px;
       content: '';
       position: absolute;
       border-bottom: 1px solid var(--body-light-icon-color);
       top: 10%;
-      left: 55%;
+      left: 58%;
       @media screen and (min-width: 768px) {
-        left: 52%;
+        left: 54%;
       }
       @media screen and (min-width: 1280px) {
-        left: 52%;
+        left: 54%;
       }
     }
   }
