@@ -1,4 +1,8 @@
 .about-us {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+    z-index: -3;
+  }
   &__container {
     @media screen and (min-width: 320px) {
       min-width: 320px;
@@ -15,6 +19,7 @@
     }
 
     @media screen and(min-width: 1280px) {
+      z-index: -3;
     }
   }
   &__content {
