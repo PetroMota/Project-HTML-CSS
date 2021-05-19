@@ -1565,6 +1565,177 @@ ul {
   }
 }
 
+.registration {
+  height: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--accent-background-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .registration {
+    background-image: url(/images/registration/tablet/donut_tablet.png), url(/images/registration/tablet/confetti_tablet.png);
+    background-image: url(/images/registration/tablet/donut_tablet@2x.png), url(/images/registration/tablet/confetti_tablet@2x.png);
+    background-size: 235px 235px, 280px 280px;
+    background-position: left top, right bottom -50%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .registration {
+    background-image: url(/images/registration/desktop/donut_desktop.png), url(/images/registration/desktop/confetti_desktop.png);
+    background-image: url(/images/registration/desktop/donut_desktop@2x.png), url(/images/registration/desktop/confetti_desktop@2x.png);
+    background-size: 250px 250px, 600px 600px;
+    background-position: top left 70px, bottom 150% right;
+    background-repeat: no-repeat;
+  }
+}
+
+.registration__title {
+  z-index: 100;
+  position: absolute;
+  top: 7%;
+  left: 25%;
+  -webkit-transform: translate(25%, 0);
+          transform: translate(25%, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .registration__title {
+    position: relative;
+    -webkit-transform: translate(20%, 0);
+            transform: translate(20%, 0);
+  }
+}
+
+.registration__bg {
+  height: 510px;
+  background-color: var(--background-color);
+  -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+          box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .registration__bg {
+    height: 260px;
+    -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+            box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px;
+  }
+}
+
+.registration-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-data {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.reg-data {
+  font-size: 18px;
+  margin-right: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .reg-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-right: 0;
+  }
+}
+
+.reg-data--line {
+  border: transparent;
+  content: '';
+  width: 265px;
+  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .reg-data--line {
+    margin-left: -10%;
+    width: 190px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+.reg-data__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.reg-form {
+  min-width: 265px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .reg-form {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
+.reg-form__title {
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .reg-form__title {
+    text-align: start;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reg-form__view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.reg-form__button {
+  margin-left: 25%;
+}
+
+@media screen and (min-width: 768px) {
+  .reg-form__button {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
 .contact__container {
   text-align: center;
 }
