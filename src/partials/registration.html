@@ -1,59 +1,33 @@
-<section class="registration">
+<section class="registration" id="register">
+  <h2 class="title registration__title">Registration</h2>
   <container class="container registration__bg registration-data">
-    <h2 class="title registration__title">Registration</h2>
-    <div class="time-location-price">
-        <time datetime="2021-05-23T11:00+07:00"> May 23, 11:00</time>
-        <address>
-          <a
-            class="link location"
-            href="https://goo.gl/maps/uQZwg2VmSYYeFe7W9"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            New York
-          </a>
-        </address>
-        <p class="price">$ 699</p>
+    <div class="reg-data text">
+      <time datetime="2021-05-23T11:00+07:00"> May 23, 11:00</time>
+      <address>
+        <a class="link" href="https://goo.gl/maps/uQZwg2VmSYYeFe7W9" target="_blank" rel="noopener noreferrer nofollow">
+          New York
+        </a>
+      </address>
+      <p class="reg-data__price">$ 699</p>
     </div>
-      <div class="registration-form">
-        <p class="registration-form__title">
-          Apply your personal info <br />
-          for registration
-        </p>
-          <form class="form">
-            <input
-              class="form__input"
-              type="text"
-              pattern="^[a-zA-Z\s]+$"
-              name="name"
-              minlength="3"
-              id="user_name"
-              placeholder="Your name"
-              required
-            />
-            <input
-              class="form__input"
-              type="tel"
-              pattern="(\+?\d[- .]*){7,13}"
-              name="phone"
-              id="user_phone"
-              placeholder="Phone number"
-              required
-            />
-            <input
-              class="form__input"
-              type="email"
-              name="email"
-              id="user_email"
-              placeholder="Email"
-            />
-          <button
-            class="button form__button form--button-text"
-            type="submit"
-          >
-            Register
-          </button>
+    <!-- <hr class="reg-data--line"/> -->
+    <div class="reg-form">
+      <p class="reg-form__title">
+        Apply your personal info <br />
+        for registration
+      </p>
+      <div class="reg-form__view">
+        <form class="form">
+          <input class="form__input" type="text" pattern="^[a-zA-Z\s]+$" name="name" minlength="3" id="user_name"
+            placeholder="Your name" required />
+          <input class="form__input" type="tel" pattern="(\+?\d[- .]*){7,13}" name="phone" id="user_phone"
+            placeholder="Phone number" required />
+          <input class="form__input" type="email" name="email" id="user_email" placeholder="Email" />
         </form>
+        <button class="button form__button reg-form__button" type="submit">
+          Register
+        </button>
       </div>
+    </div>
   </container>
 </section>
