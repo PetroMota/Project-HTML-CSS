@@ -862,6 +862,10 @@ ul {
   }
 }
 
+#more {
+  display: none;
+}
+
 .program {
   background-color: var(--background-color);
   padding-bottom: 45px;
