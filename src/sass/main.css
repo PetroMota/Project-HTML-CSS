@@ -862,6 +862,10 @@ ul {
   }
 }
 
+#dots {
+  display: none;
+}
+
 #more {
   display: none;
 }
