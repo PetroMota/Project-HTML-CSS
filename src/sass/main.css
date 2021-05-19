@@ -511,7 +511,7 @@ img {
 .mobile-menu.is-open {
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 101;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,8 +545,6 @@ img {
   font-family: Montserrat;
   font-size: 24px;
   line-height: 29px;
-  line-height: 100%;
-  margin-bottom: 200px;
 }
 
 .mobile-list__item {
@@ -1193,13 +1191,8 @@ ul {
 }
 
 .reviews {
-  --body-default-background-color: #fffff9;
-  --body-default-text-color: #2e2520;
-  --body-default-header-color: #2e2520;
-  --body-light-icon-color: #ab816c;
   padding-top: 30px;
-  background-color: var(--body-default-background-color);
-  color: var(--body-default-text-color);
+  color: var(--primary-text-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/reviews/mobile/bg_2_mobile.png);
@@ -1236,7 +1229,7 @@ ul {
 }
 
 .reviews .reviews__title {
-  color: var(--body-default-header-color);
+  color: var(--primary-text-color);
   text-align: center;
   font-family: Caveat Brush;
   font-size: 36px;
@@ -1526,7 +1519,7 @@ ul {
   width: 35px;
   content: '';
   position: absolute;
-  border-bottom: 1px solid var(--body-light-icon-color);
+  border-bottom: 1px solid var(--button-background-color);
   top: 10%;
   left: 30%;
 }
@@ -1548,7 +1541,7 @@ ul {
   width: 35px;
   content: '';
   position: absolute;
-  border-bottom: 1px solid var(--body-light-icon-color);
+  border-bottom: 1px solid var(--button-background-color);
   top: 10%;
   left: 58%;
 }
@@ -1675,8 +1668,10 @@ ul {
 
 @media screen and (min-width: 768px) {
   .reg-data--line {
-    margin-left: -10%;
-    width: 190px;
+    content: '';
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }

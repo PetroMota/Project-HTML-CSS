@@ -1,12 +1,12 @@
 .reviews {
-  --body-default-background-color: #fffff9;
-  --body-default-text-color: #2e2520;
-  --body-default-header-color: #2e2520;
-  --body-light-icon-color: #ab816c;
+  // --body-default-background-color: #fffff9;
+  // --body-default-text-color: rgb(46, 37, 32);
+  // --body-default-header-color: rgb(46, 37, 32);
+  // --body-light-icon-color: #ab816c;
 
   padding-top: 30px;
-  background-color: var(--body-default-background-color);
-  color: var(--body-default-text-color);
+  // background-color: var(--body-default-background-color);
+  color: var(--primary-text-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/reviews/mobile/bg_2_mobile.png);
@@ -29,7 +29,7 @@
   }
 
   .reviews__title {
-    color: var(--body-default-header-color);
+    color: var(--primary-text-color);
     text-align: center;
     font-family: Caveat Brush;
     font-size: 36px;
@@ -228,7 +228,7 @@
       width: 35px;
       content: '';
       position: absolute;
-      border-bottom: 1px solid var(--body-light-icon-color);
+      border-bottom: 1px solid var(--button-background-color);
       top: 10%;
       left: 30%;
       @media screen and (min-width: 768px) {
@@ -243,7 +243,7 @@
       width: 35px;
       content: '';
       position: absolute;
-      border-bottom: 1px solid var(--body-light-icon-color);
+      border-bottom: 1px solid var(--button-background-color);
       top: 10%;
       left: 58%;
       @media screen and (min-width: 768px) {
