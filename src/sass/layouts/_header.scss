@@ -13,11 +13,11 @@ ul {
   z-index: -1;
 
   @media screen and (min-width: 768px) {
-    margin-left: 254px;
+    padding-left: 254px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-left: 561px;
+    padding-left: 561px;
   }
 }
 
@@ -32,7 +32,22 @@ ul {
 }
 
 .header__container {
-  @media screen and(min-width: 825px) {
+  @media screen and(min-width: 1280px) {
     display: flex;
+  }
+}
+
+.background-image {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media screen and (min-width:768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
   }
 }
