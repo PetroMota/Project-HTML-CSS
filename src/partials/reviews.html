@@ -1,272 +1,119 @@
 <section class="reviews">
   <h2 class="title reviews__title">Reviews</h2>
 
-  <!-- <ul class="reviews__list">
-    <li class="review no-selected">
-      <img
-        class="review__client"
-        src="../src/images/reviews/desktop/john_desktop.jpg"
-        srcset="
-          ../src/images/reviews/desktop/john_desktop.jpg    1x,
-          ../src/images/reviews/desktop/john_desktop@2x.jpg 2x
-        "
-        alt="review 001"
-      />
-      <div class="review__client--rate">
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-      </div>
-      <h3 class="review__client-name">John</h3>
-    </li>
-    <li class="review is-selected">
-      <img
-        class="review__client"
-        src="../src/images/reviews/desktop/will_desktop.jpg"
-        srcset="
-          ../src/images/reviews/desktop/will_desktop.jpg    1x,
-          ../src/images/reviews/desktop/will_desktop@2x.jpg 2x
-        "
-        alt="review 002"
-      />
-      <div class="review__client---rate">
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-      </div>
-      <h3 class="review__client-name">Will</h3>
-    </li>
-    <li class="review no-selected">
-      <img
-        class="review__client"
-        src="../src/images/reviews/desktop/elisabeth_desktop.jpg"
-        srcset="
-          ../src/images/reviews/desktop/elisabeth_desktop.jpg    1x,
-          ../src/images/reviews/desktop/elisabeth_desktop@2x.jpg 2x
-        "
-        alt="review 003"
-      />
-      <div class="review__client--rate">
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-        <svg class="review__rate" width="24px" height="24px">
-          <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-        </svg>
-      </div>
-      <h3 class="review__client-name">Elisabeth</h3>
-    </li>
-  </ul> -->
-
   <!-- Reviews Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide review__slider">
-        <img
-          class="review__client"
-          src="../src/images/reviews/desktop/john_desktop.jpg"
-          srcset="
-            ../src/images/reviews/desktop/john_desktop.jpg    1x,
-            ../src/images/reviews/desktop/john_desktop@2x.jpg 2x
-          "
-          alt="review 001"
-        />
-        <div class="review__client--rate">
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-blank"></use>
-          </svg>
-        </div>
-        <h3 class="review__client-name">John</h3>
-        <article class="review__client-text">
-          <h3 class="review__client-header">John</h3>
-          Last time I have visited a cooking course by Eva I was impressed with the way she
-          explained everything to people. You can be sure you will manage to cook a delicious dish
-          even if it is your first time in the kitchen! Thank you so much for the masterclass!
-          Looking forward to the next one and highly recommend it to everyone!
-        </article>
-
+        <include src="./partials/database/client-data-001.html"></include>
         <!-- Next review client -->
         <div class="review__client-preview">
-          <img
-            class="review__client-next"
-            src="../src/images/reviews/desktop/will_desktop.jpg"
-            srcset="
-              ../src/images/reviews/desktop/will_desktop.jpg    1x,
-              ../src/images/reviews/desktop/will_desktop@2x.jpg 2x
-            "
-            alt="review 002"
-          />
-          <img
-            class="review__client-pervious"
-            src="../src/images/reviews/desktop/elisabeth_desktop.jpg"
-            srcset="
-              ../src/images/reviews/desktop/elisabeth_desktop.jpg    1x,
-              ../src/images/reviews/desktop/elisabeth_desktop@2x.jpg 2x
-            "
-            alt="review 003"
-          />
+          <div class="review__client-preview-next">
+            <div class="review__client-set">
+              <img
+                class="review__client-photo"
+                src="../src/images/reviews/desktop/will_desktop.jpg"
+                srcset="
+                  ../src/images/reviews/desktop/will_desktop.jpg    1x,
+                  ../src/images/reviews/desktop/will_desktop@2x.jpg 2x
+                "
+                alt="review 002"
+              />
+              <div class="review__client--rate">
+                <svg class="review__rate" width="24px" height="24px">
+                  <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
+                </svg>
+                <svg class="review__rate" width="24px" height="24px">
+                  <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
+                </svg>
+                <svg class="review__rate" width="24px" height="24px">
+                  <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
+                </svg>
+                <svg class="review__rate" width="24px" height="24px">
+                  <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
+                </svg>
+                <svg class="review__rate" width="24px" height="24px">
+                  <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
+                </svg>
+              </div>
+              <h3 class="review__client-name">Will</h3>
+            </div>
+          </div>
+          <div class="review__client-preview-pervious">
+            <div class="review__client-set">
+              <img
+                class="review__client-photo"
+                src="../src/images/reviews/desktop/elisabeth_desktop.jpg"
+                srcset="
+                  ../src/images/reviews/desktop/elisabeth_desktop.jpg    1x,
+                  ../src/images/reviews/desktop/elisabeth_desktop@2x.jpg 2x
+                "
+                alt="review 003"
+              />
+              <div class="review__client--rate">
+                <svg class="review__rate" width="24px" height="24px">
+                  <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
+                </svg>
+                <svg class="review__rate" width="24px" height="24px">
+                  <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
+                </svg>
+                <svg class="review__rate" width="24px" height="24px">
+                  <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
+                </svg>
+                <svg class="review__rate" width="24px" height="24px">
+                  <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
+                </svg>
+                <svg class="review__rate" width="24px" height="24px">
+                  <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
+                </svg>
+              </div>
+              <h3 class="review__client-name">Elisabeth</h3>
+            </div>
+          </div>
         </div>
         <!-- ------------------ -->
       </div>
       <div class="swiper-slide review__slider">
-        <img
-          class="review__client"
-          src="../src/images/reviews/desktop/will_desktop.jpg"
-          srcset="
-            ../src/images/reviews/desktop/will_desktop.jpg    1x,
-            ../src/images/reviews/desktop/will_desktop@2x.jpg 2x
-          "
-          alt="review 002"
-        />
-        <div class="review__client--rate">
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-        </div>
-        <h3 class="review__client-name">Will</h3>
-        <article class="review__client-text">
-          <h3 class="review__client-header">Will</h3>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quia similique quis
-          ipsum voluptas. Quos illum ad ducimus, veritatis enim eveniet id dignissimos fugit
-          mollitia amet voluptatibus distinctio debitis eos.
-        </article>
-        <!-- Next review client -->
-        <div class="review__client-preview">
-          <img
-            class="review__client-next"
-            src="../src/images/reviews/desktop/elisabeth_desktop.jpg"
-            srcset="
-              ../src/images/reviews/desktop/elisabeth_desktop.jpg    1x,
-              ../src/images/reviews/desktop/elisabeth_desktop@2x.jpg 2x
-            "
-            alt="review 003"
-          />
-          <img
-            class="review__client-pervious"
-            src="../src/images/reviews/desktop/john_desktop.jpg"
-            srcset="
-              ../src/images/reviews/desktop/john_desktop.jpg    1x,
-              ../src/images/reviews/desktop/john_desktop@2x.jpg 2x
-            "
-            alt="review 001"
-          />
-        </div>
-        <!-- ------------------ -->
+        <include src="./partials/database/client-data-002.html"></include>
       </div>
-
       <div class="swiper-slide review__slider">
-        <img
-          class="review__client"
-          src="../src/images/reviews/desktop/elisabeth_desktop.jpg"
-          srcset="
-            ../src/images/reviews/desktop/elisabeth_desktop.jpg    1x,
-            ../src/images/reviews/desktop/elisabeth_desktop@2x.jpg 2x
-          "
-          alt="review 003"
-        />
-        <div class="review__client--rate">
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-          <svg class="review__rate" width="24px" height="24px">
-            <use href="../src/images/sprite/ratestars.svg#icon-star-full"></use>
-          </svg>
-        </div>
-        <h3 class="review__client-name">Elisabeth</h3>
-        <article class="swiper-slide review__client-text">
-          <h3 class="review__client-header">Elisabeth</h3>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quia similique quis
-          ipsum voluptas. Quos illum ad ducimus, veritatis enim eveniet id dignissimos fugit
-          mollitia amet voluptatibus distinctio debitis eos.
-        </article>
-        <!-- Next review client -->
-        <div class="review__client-preview">
-          <img
-            class="review__client-next"
-            src="../src/images/reviews/desktop/john_desktop.jpg"
-            srcset="
-              ../src/images/reviews/desktop/john_desktop.jpg    1x,
-              ../src/images/reviews/desktop/john_desktop@2x.jpg 2x
-            "
-            alt="review 001"
-          />
-          <img
-            class="review__client-pervious"
-            src="../src/images/reviews/desktop/will_desktop.jpg"
-            srcset="
-              ../src/images/reviews/desktop/will_desktop.jpg    1x,
-              ../src/images/reviews/desktop/will_desktop@2x.jpg 2x
-            "
-            alt="review 002"
-          />
-        </div>
-        <!-- ------------------ -->
+        <include src="./partials/database/client-data-003.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-004.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-005.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-006.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-007.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-008.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-009.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-010.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-011.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-012.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-013.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-014.html"></include>
+      </div>
+      <div class="swiper-slide review__slider">
+        <include src="./partials/database/client-data-015.html"></include>
       </div>
     </div>
     <div class="swiper-pagination review__counter"></div>
