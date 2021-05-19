@@ -1570,6 +1570,7 @@ ul {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: var(--accent-background-color);
+  position: relative;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
@@ -1603,7 +1604,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .registration__title {
-    position: relative;
+    position: absolute;
     -webkit-transform: translate(20%, 0);
             transform: translate(20%, 0);
   }

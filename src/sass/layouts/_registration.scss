@@ -3,6 +3,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: var(--accent-background-color);
+  position: relative;
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     background-image: url(/images/registration/tablet/donut_tablet.png),
@@ -32,7 +33,7 @@
   transform: translate(25%, 0);
 
   @media screen and (min-width: 768px) {
-    position: relative;
+    position: absolute;
     transform: translate(20%, 0);
   }
 }
