@@ -3,12 +3,12 @@
   align-items: center;
   flex-direction: column;
 
-  @media screen and (min-width: 635px) {
+  @media screen and (min-width: 768px) {
     align-items: flex-start;
     padding-bottom: 80px;
   }
 
-  @media screen and (min-width: 825px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 56px;
   }
 }
