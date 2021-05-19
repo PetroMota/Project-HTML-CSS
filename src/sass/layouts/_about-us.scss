@@ -1,6 +1,10 @@
 .about-us {
   &__container {
-    @media screen and (min-width: 635px) {
+    @media screen and (min-width: 320px) {
+      min-width: 320px;
+    }
+
+    @media screen and (min-width: 768px) {
       display: flex;
     }
   }
@@ -14,7 +18,7 @@
     }
   }
   &__content {
-    @media screen and (min-width: 635px) {
+    @media screen and (min-width: 768px) {
       display: inline-block;
       margin-left: 24.35px;
       vertical-align: top;
@@ -52,4 +56,12 @@
       display: none;
     }
   }
+}
+
+#dots {
+  display: inline;
+}
+
+#more {
+  display: none;
 }
