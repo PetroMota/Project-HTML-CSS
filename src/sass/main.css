@@ -413,7 +413,7 @@ ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -438,8 +438,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20px;
-  height: 14px;
+  width: 26px;
+  height: 25px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -448,10 +448,6 @@ ul {
 
 .social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
-}
-
-.social-list__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .social-list__icon {
