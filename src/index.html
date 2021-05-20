@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"
- scroll-behavior: smooth>
+<html lang="ru" scroll-behavior: smooth>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,58 +24,57 @@
     <include src="./partials/about-us.html"></include>
     <include src="./partials/program.html"></include>
     <include src="./partials/reviews.html"></include>
-    <include src="./partials/registration.html"></include>
+    <!-- перенесено в review.html -->
+    <!-- <include src="./partials/registration.html"></include>
     <include src="./partials/contact.html"></include>
-    <include src="./partials/footer.html"></include>
+    <include src="./partials/footer.html"></include> -->
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
     <script src="./mobile.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>    <script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+    ></script>
+    <script>
       var i = 0;
       function qwerty() {
         if (!i) {
-          document.getElementById("more").style.display = "inline";
-          document.getElementById("dots").style.display = "none";
-          document.getElementById("read").innerHTML = "Less";
+          document.getElementById('more').style.display = 'inline';
+          document.getElementById('dots').style.display = 'none';
+          document.getElementById('read').innerHTML = 'Less';
           i = 1;
-        } 
-        else {
-          document.getElementById("more").style.display = "none";
-          document.getElementById("dots").style.display = "inline";
-          document.getElementById("read").innerHTML = "Read more";
+        } else {
+          document.getElementById('more').style.display = 'none';
+          document.getElementById('dots').style.display = 'inline';
+          document.getElementById('read').innerHTML = 'Read more';
           i = 0;
         }
 
         if (window.screen.availWidth >= 1280) {
-          document.getElementById("more").style.display = "inline";
+          document.getElementById('more').style.display = 'inline';
         }
       }
     </script>
-    
-        <script>
-        var i = 0;
-        function qwert() {
-            if (!i) {
-                document.getElementById("dots").style.
-                    display = "inline";
-                document.getElementById("more").style.
-                    display = "none";
-                document.getElementById("reading").innerHTML = "Less"
-                i = 1;
-            }
-            else {
-                document.getElementById("dots").style.
-                    display = "none";
-                document.getElementById("more").style.
-                    display = "inline";
-                document.getElementById("reading").innerHTML = "Read more"
-                i = 0;
-            }
-                  if (window.screen.availWidth >= 1280) {
+
+    <script>
+      var i = 0;
+      function qwert() {
+        if (!i) {
+          document.getElementById('dots').style.display = 'inline';
+          document.getElementById('more').style.display = 'none';
+          document.getElementById('reading').innerHTML = 'Less';
+          i = 1;
+        } else {
+          document.getElementById('dots').style.display = 'none';
+          document.getElementById('more').style.display = 'inline';
+          document.getElementById('reading').innerHTML = 'Read more';
+          i = 0;
+        }
+        if (window.screen.availWidth >= 1280) {
           document.getElementById('more').style.display = 'inline';
         }
-        }
+      }
     </script>
   </body>
 </html>
