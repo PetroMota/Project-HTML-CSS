@@ -1,9 +1,8 @@
 .registration {
   position: relative;
-  // padding-top: 80px;
+  padding-top: 80px;
   padding-bottom: 80px;
   text-align: center;
-  //   background-color: var(--background-color);
 
   &__title {
     margin-bottom: 20px;
@@ -63,10 +62,6 @@
     margin-bottom: 10px;
   }
 
-  // &__label {
-  //   margin-bottom: 25px;
-  // }
-
   &__button {
     text-align: center;
   }
@@ -105,12 +100,7 @@
       flex-direction: column;
       margin-right: 20px;
     }
-    &__input {
-      margin-bottom: 0;
-    }
-    &__label {
-      margin-bottom: 15px;
-    }
+
     &__button {
       margin-top: 75px;
     }
@@ -146,8 +136,8 @@
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    left: -40px;
-    top: -40px;
+    left: -100px;
+    top: -100px;
     z-index: 0;
 
     &__img {
@@ -156,7 +146,11 @@
     }
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (min-width: 1280px) {
+    display: block;
+    position: absolute;
+    left: -70px;
+    top: -70px;
     &__img {
       width: 250px;
       height: 250px;
@@ -165,24 +159,21 @@
 }
 .registration-confetti {
   display: none;
-
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    right: 0;
-    top: 250px;
+    right: 50px;
+    bottom: -420%;
     z-index: 0;
-
+    transition: 1500ms cubic-bezier(0.2, 0.2, 0.2, 0.2);
     &__img {
       width: 380px;
       height: 380px;
     }
   }
-
   @media screen and (min-width: 1280px) {
-    right: 0px;
-    top: 250px;
-
+    right: 50px;
+    bottom: -440%;
     &__img {
       width: 600px;
       height: 600px;

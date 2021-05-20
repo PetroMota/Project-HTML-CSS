@@ -2,8 +2,7 @@
   background-image: url(/images/header/mobile/bg-header_mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  max-width: 1600px;
   //   padding-top: 20px;
   @media screen and (min-width: 768px) {
     background-image: url(/images/header/tablet/bg-header_tablet.png);

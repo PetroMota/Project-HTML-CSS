@@ -53,6 +53,10 @@
   }
 }
 
+.is-open .mobile-menu-icon {
+  position: fixed;
+}
+
 .mobmenu-list {
   flex-direction: column;
   font-family: Montserrat;
