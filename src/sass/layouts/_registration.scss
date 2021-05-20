@@ -1,8 +1,16 @@
 .registration {
   position: relative;
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 80px;
   text-align: center;
+
+  @media screen and(min-width:768px) {
+    padding-top: 115px;
+  }
+
+  @media screen and(min-width:1280px) {
+    padding-top: 143px;
+  }
 
   &__title {
     margin-bottom: 20px;
