@@ -222,3 +222,49 @@
     }
   }
 }
+.program__read-more {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .program-read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+  }
+
+  .program__text--visually {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+  }
+
+  .program__read-more:checked ~ .program__text--visually {
+    opacity: 1;
+    font-size: 16px;
+    max-height: 999em;
+  }
+
+  .program__read-more ~ .read-more--text:before {
+    content: 'Read more';
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .program__read-more:checked ~ .read-more--text:before {
+    content: 'Less';
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .read-more--text {
+    font-family: Caveat Brush;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--read-more-color);
+    font-size: 18px;
+    line-height: 3.6px;
+  }
+}
