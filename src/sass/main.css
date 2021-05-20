@@ -1545,6 +1545,210 @@ ul {
   }
 }
 
+.registration {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.registration__title {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.registration__data {
+  z-index: 10;
+  padding-bottom: 45px;
+  background-color: var(--background-color);
+  -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+          box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .registration__title {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    -webkit-transform: translate(200%, -100%);
+            transform: translate(200%, -100%);
+  }
+  .registration__data {
+    max-height: 260px;
+    position: relative;
+    padding-bottom: 50px;
+    border-radius: 150px;
+  }
+}
+
+.reg-form {
+  padding: 0 15px 0 15px;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.reg-form__info {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+}
+
+.reg-form__time {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.reg-form__price {
+  font-weight: 500;
+}
+
+.reg-form__title {
+  margin-bottom: 10px;
+}
+
+.reg-form__label {
+  margin-bottom: 25px;
+}
+
+.reg-form__button {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .reg-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    height: 260px;
+    padding: 35px 20px 35px 34px;
+  }
+  .reg-form__info {
+    text-align: end;
+    padding-right: 30px;
+    margin-right: 30px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px solid var(--read-more-color);
+    border-bottom: none;
+  }
+  .reg-form__time {
+    width: 120px;
+    text-align: end;
+    margin-top: 15px;
+    margin-left: -20px;
+  }
+  .reg-form__title {
+    width: 235px;
+    text-align: left;
+    margin-top: 15px;
+  }
+  .reg-form__view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 20px;
+  }
+  .reg-form__input {
+    margin-bottom: 0;
+  }
+  .reg-form__label {
+    margin-bottom: 15px;
+  }
+  .reg-form__button {
+    margin-top: 75px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reg-form {
+    width: 830px;
+    padding: 35px 100px 35px 104px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .reg-form__view {
+    margin-right: 45px;
+  }
+  .reg-form__time, .reg-form__price {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .reg-form__info {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.registration-donut {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-donut {
+    display: block;
+    position: absolute;
+    left: -40px;
+    top: -40px;
+    z-index: 0;
+  }
+  .registration-donut__img {
+    width: 235px;
+    height: 235px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .registration-donut__img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.registration-confetti {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-confetti {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 2550px;
+    z-index: 0;
+  }
+  .registration-confetti__img {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .registration-confetti {
+    right: 0px;
+    top: 2500px;
+  }
+  .registration-confetti__img {
+    width: 600px;
+    height: 600px;
+  }
+}
+
 .contact__container {
   text-align: center;
 }
