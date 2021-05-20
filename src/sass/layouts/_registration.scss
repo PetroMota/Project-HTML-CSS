@@ -156,7 +156,7 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (max-width: 1280px) {
     &__img {
       width: 250px;
       height: 250px;
@@ -170,7 +170,7 @@
     display: block;
     position: absolute;
     right: 0;
-    top: 2550px;
+    top: 250px;
     z-index: 0;
 
     &__img {
@@ -181,7 +181,7 @@
 
   @media screen and (min-width: 1280px) {
     right: 0px;
-    top: 2500px;
+    top: 250px;
 
     &__img {
       width: 600px;
