@@ -1,27 +1,29 @@
-.contact__container {
-  text-align: center;
-}
-
-.contact__text {
-  margin-bottom: 23px;
-
-  @media screen and (min-width: 1280px) {
-    & {
-      margin-bottom: 21px;
-    }
+.contact {
+  &__container {
+    text-align: center;
   }
-}
 
-.contact__form {
-  @media screen and (min-width: 768px) {
-    & {
-      max-width: 410px;
+  &__text {
+    margin-bottom: 23px;
+
+    @media screen and (min-width: 1280px) {
+      & {
+        margin-bottom: 21px;
+      }
     }
   }
 
-  @media screen and (min-width: 1280px) {
-    & {
-      max-width: 430px;
+  &__form {
+    @media screen and (min-width: 768px) {
+      & {
+        max-width: 410px;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      & {
+        max-width: 430px;
+      }
     }
   }
 }

@@ -1,33 +1,46 @@
-<section class="registration">
-  <h2 class="title registration__title">Registration</h2>
-  <container class="container registration__bg registration-data">
-    <div class="reg-data text">
-      <time datetime="2021-05-23T11:00+07:00"> May 23, 11:00</time>
-      <address>
-        <a class="link" href="https://goo.gl/maps/uQZwg2VmSYYeFe7W9" target="_blank" rel="noopener noreferrer nofollow">
-          New York
-        </a>
-      </address>
-      <p class="reg-data__price">$ 699</p>
+<!-- <section id="register" class="registration">
+  <div class="container">
+    <div class="registration__data">
+      <h2 class="registration__title title">Registration</h2>
+      <form class="reg-form">
+        <div class="reg-form__info">
+          <p class="reg-form__time text">May 23, 11:00 New York</p>
+          <p class="reg-form__price text">$ 699</p>
+        </div>
+        <div class="reg-form__view">
+          <p class="reg-form__title text">Apply your personal info for registration</p>
+          <label class="reg-form__label">
+            <input class="form__input" type="text" name="name" id="user_name" placeholder="Your name"
+              pattern="^[a-zA-Z\s]+$" minlength="3" required />
+          </label>
+          <label class="reg-form__label">
+            <input class="form__input" type="tel" name="phone" id="user_phone" placeholder="Phone number"
+              pattern="(\+?\d[- .]*){7,13}" required />
+          </label>
+          <label class="reg-form__label">
+            <input class="form__input" type="email" name="email" placeholder="Email" required />
+          </label>
+        </div>
+        <button type="submit" class="button form__button">Register</button>
+      </form>
+      <picture class="registration-donut">
+        <source srcset="
+              /images/registration/tablet/donut_tablet.png,
+              /images/registration/tablet/donut_tablet@2x.png
+              " />
+        <img class="registration-donut__img" src="/images/registration/tablet/donut_tablet.png" />
+      </picture>
     </div>
-    <hr class="reg-data--line"/>
-    <div class="reg-form">
-      <p class="reg-form__title">
-        Apply your personal info <br />
-        for registration
-      </p>
-      <div class="reg-form__view">
-        <form class="form">
-          <input class="form__input" type="text" pattern="^[a-zA-Z\s]+$" name="name" minlength="3" id="user_name"
-            placeholder="Your name" required />
-          <input class="form__input" type="tel" pattern="(\+?\d[- .]*){7,13}" name="phone" id="user_phone"
-            placeholder="Phone number" required />
-          <input class="form__input" type="email" name="email" id="user_email" placeholder="Email" />
-        </form>
-        <button class="button form__button reg-form__button" type="submit">
-          Register
-        </button>
-      </div>
-    </div>
-  </container>
+  </div>
 </section>
+<picture class="registration-confetti">
+  <source srcset="
+        /images/registration/desktop/confetti_desktop.png,
+        /images/registration/desktop/donut_desktop@2x.png
+        " />
+  <source srcset="
+        /images/registration/tablet/confetti_tablet.png,
+        /images/registration/tablet/confetti_tablet@2x.png
+        " />
+  <img class="registration-confetti__img" src=".//images/registration/tablet/confetti_tablet.png"/>
+</picture> -->

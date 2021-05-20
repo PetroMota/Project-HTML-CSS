@@ -1,15 +1,3 @@
-.navigation-list {
-  display: inline-flex;
-  font-size: 18px;
-  @media screen and (max-width: 1279.98px) {
-    display: none;
-  }
-}
-
-.navigation__item:not(:last-child) {
-  margin-right: 20px;
-}
-
 .navigation {
   display: flex;
 
@@ -18,8 +6,20 @@
   }
 }
 
-.navigation__item:hover,
-.navigation__item:focus,
-.navigation__item:active {
-  color: var(--focus-hover-color);
+.navigation-list {
+  display: inline-flex;
+  font-size: 18px;
+  @media screen and (max-width: 1279.98px) {
+    display: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__item:hover,
+  &__item:focus,
+  &__item:active {
+    color: var(--focus-hover-color);
+  }
 }
